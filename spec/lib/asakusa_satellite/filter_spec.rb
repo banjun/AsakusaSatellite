@@ -96,6 +96,11 @@ describe AsakusaSatellite::Filter do
       subject { make["<div/>"] }
       it { should == "<div></div>" }
     end
+
+    describe 'a' do
+      subject { make["<a/>"] }
+      it { should == "<a></a>" }
+    end
   end
 
   describe 'return "as is" when error occured' do
